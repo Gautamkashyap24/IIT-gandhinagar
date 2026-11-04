@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Roboto Slab', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #eef5f9;
+  }
+
+  h1, h2, h3, h4, h5, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Glassmorphism utility classes for hero top */
+.glass-nav {
+  background: rgba(14, 33, 40, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-glass-card {
+  background: rgba(14, 30, 36, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+/* Subtle curved architectural card surfaces */
+.rect-card {
+  background: #ffffff;
+  border: 1px solid #d8e6ee;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(15, 41, 55, 0.05);
+}
+
+.rect-card-accent {
+  background: #f7fafc;
+  border: 1px solid #c7dbe6;
+  border-radius: 12px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

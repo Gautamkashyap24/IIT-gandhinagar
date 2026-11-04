@@ -1,0 +1,6 @@
+{
+  "name": "LiFE Flex League",
+  "description": "A community energy challenge platform coordinating flexible neighbourhood habits through timed Energy Relays under Mission LiFE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
